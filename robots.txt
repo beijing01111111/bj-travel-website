@@ -8,4 +8,4 @@ User-agent: *
 Allow: /
 
 # 站点地图地址（已替换为你的实际域名）
-Sitemap: https://bj-dingzhi-site.tos-ap-southeast-1.volces.com/sitemap.xml
+Sitemap: https://bjdingzhi.top/sitemap.xml

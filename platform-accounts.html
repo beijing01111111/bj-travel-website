@@ -6,7 +6,7 @@
     <title>北京家庭定制游_私家团纯玩小包团_正规旅行社攻略大全</title>
     <meta name="keywords" content="北京定制游,北京私家团,一家一团,北京纯玩小包团,家庭定制游,北京亲子游,北京专车专导">
     <meta name="description" content="北京正规家庭定制游平台，主打纯玩小包团、一家一团、专车专导服务，海量真实攻略测评，24小时咨询热线，专业旅游管家一对一服务。">
-    <!-- 头条自动收录JS 保留 -->
+    <!-- 头条自动收录JS -->
     <script>
     (function(){
     var el = document.createElement("script");
@@ -19,9 +19,8 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑", sans-serif; }
         body { background: #f5f7fa; line-height: 1.7; color: #333; }
-        img { max-width: 100%; height: auto; display: block; }
 
-        /* 顶部固定联系栏 - 全局醒目 */
+        /* 顶部固定联系栏 */
         .top-bar {
             position: fixed; top: 0; left: 0; width: 100%;
             background: #c81623; color: #fff;
@@ -32,7 +31,7 @@
         .top-bar span { margin: 0 18px; }
         .hotline { color: #ffe666; font-size: 18px; font-weight: bold; }
 
-        /* 右侧悬浮联系方式 + 二维码（永久固定，获客核心） */
+        /* 右侧悬浮联系方式（无二维码） */
         .float-contact {
             position: fixed;
             right: 20px;
@@ -51,12 +50,6 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
-        .float-qrcode {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 10px;
-            border: 1px solid #eee;
-        }
         .float-text {
             font-size: 14px;
             color: #333;
@@ -68,62 +61,36 @@
             font-size: 15px;
         }
 
-        /* 主容器 整体居中 */
+        /* 主容器 */
         .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
 
-        /* 顶部大图Banner 核心视觉 */
+        /* 顶部标题区 */
         .main-banner {
-            margin-top: 54px; /* 避开顶部固定栏 */
-            height: 320px;
-            background: url("https://img0.baidu.com/it/u=1192769229,2682112399&fm=253&fmt=auto&app=138&f=JPEG?w=1200&h=500") center center no-repeat;
-            background-size: cover;
-            border-radius: 0 0 16px 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-            position: relative;
-            overflow: hidden;
+            margin-top: 54px;
+            padding: 40px 20px;
+            background: #f8f9fa;
+            border-radius: 0 0 12px 12px;
+            text-align: center;
         }
-        .main-banner::after {
-            content: "";
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.3);
-        }
-        .banner-text { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
-        .main-banner h1 { font-size: 34px; margin-bottom: 12px; }
-        .main-banner p { font-size: 18px; opacity: 0.95; }
+        .main-banner h1 { font-size: 34px; margin-bottom: 12px; color: #333; }
+        .main-banner p { font-size: 18px; color: #666; }
 
-        /* 栏目板块通用样式 + 图文布局 */
+        /* 栏目板块 */
         .platform {
             background: #fff;
             border-radius: 12px;
             padding: 28px;
             margin: 25px 0;
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
         }
-        /* 板块左侧配图 */
-        .platform-img {
-            width: 80px;
-            flex-shrink: 0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        /* 板块右侧内容区 */
-        .platform-content { flex: 1; }
-        .platform-content h2 {
+        .platform h2 {
             color: #c81623; font-size: 22px;
             border-left: 4px solid #c81623;
             padding-left: 14px;
             margin-bottom: 22px;
         }
 
-        /* 文章列表样式 */
+        /* 文章列表 */
         .article {
             padding: 11px 0;
             border-bottom: 1px dashed #e5e5e5;
@@ -134,34 +101,21 @@
         .article a { color: #333; text-decoration: none; transition: color 0.25s; }
         .article a:hover { color: #c81623; text-decoration: underline; }
 
-        /* 底部联系板块 大图背景+醒目联系方式 */
+        /* 底部联系区 */
         .contact-footer {
             margin: 40px 0 20px;
-            height: 260px;
-            background: url("https://img2.baidu.com/it/u=3802523023,1797132291&fm=253&fmt=auto&app=138&f=JPEG?w=1200&h=400") center center no-repeat;
-            background-size: cover;
+            padding: 40px 20px;
+            background: #c81623;
             border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
             color: #fff;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-            position: relative;
         }
-        .contact-footer::after {
-            content: "";
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.35);
-            border-radius: 12px;
-        }
-        .contact-inner { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
         .contact-footer h3 { font-size: 26px; margin-bottom: 20px; }
         .contact-footer p { font-size: 19px; margin: 12px 0; }
         .contact-footer .phone { color: #ffe666; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
         .contact-footer .wx { color: #ffe666; font-size: 24px; font-weight: bold; }
 
-        /* 版权底部 */
+        /* 版权信息 */
         .copyright {
             text-align: center;
             color: #888;
@@ -169,97 +123,43 @@
             padding: 20px 0 30px;
         }
 
-        /* 移动端自适应 手机端优化 */
+        /* 移动端适配 */
         @media (max-width: 768px) {
-            .float-contact { display: none; } /* 手机端隐藏侧边悬浮，不遮挡 */
+            .float-contact { display: none; }
             .top-bar span { display: block; margin: 6px 0; }
-            .main-banner { height: 220px; margin-top: 76px; }
+            .main-banner { margin-top: 76px; }
             .main-banner h1 { font-size: 24px; }
             .main-banner p { font-size: 16px; }
-            .platform { flex-direction: column; align-items: center; text-align: center; }
-            .platform-img { width: 70px; margin-bottom: 15px; }
-            .contact-footer { height: 220px; }
-            .contact-footer h3 { font-size: 22px; }
             .contact-footer .phone { font-size: 24px; }
         }
     </style>
 </head>
 <body>
 
-<!-- 顶部固定联系方式（全局可见） -->
+<!-- 顶部固定联系方式 -->
 <div class="top-bar">
     <span class="hotline">全国咨询热线：400-8077-734</span>
     <span>旅游管家微信：fanye0666</span>
 </div>
 
-<!-- 右侧悬浮定制师二维码 + 联系方式（永久固定） -->
+<!-- 右侧悬浮联系方式 -->
 <div class="float-contact">
-    <h4>定制师微信</h4>
-    <img class="float-qrcode" src="https://img0.baidu.com/it/u=3070494128,1607909314&fm=253&fmt=auto&app=120&f=JPEG?w=100&h=100" alt="定制师二维码">
+    <h4>定制咨询</h4>
     <p class="float-text">微信：fanye0666</p>
     <p class="float-text float-phone">电话：400-8077-734</p>
 </div>
 
 <div class="container">
-    <!-- 首页主Banner大图 -->
+    <!-- 页面标题区 -->
     <div class="main-banner">
-        <div class="banner-text">
-            <h1>北京家庭定制游 · 纯玩私家团</h1>
-            <p>一家一团 | 专车专导 | 无购物出行 | 亲子/老人专属旅游方案</p>
-        </div>
+        <h1>北京家庭定制游 · 纯玩私家团</h1>
+        <p>一家一团 | 专车专导 | 无购物出行 | 亲子/老人专属旅游方案</p>
     </div>
 
-    <!-- 其他平台攻略（按日期从近到远排序） -->
+    <!-- 携程攻略 -->
     <div class="platform">
-        <div class="platform-img">
-            <img src="https://img2.baidu.com/it/u=3683311903,1191912291&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="综合旅游资讯">
-        </div>
-        <div class="platform-content">
-            <h2>其他平台攻略</h2>
-            <!-- 2026-06-16 -->
-            <div class="article"><span class="date">2026-06-16</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260616_4862035.shtml" target="_blank">北京带老人孩子定制游怎么选？家庭出行选团核心标准</a></div>
-            <div class="article"><span class="date">2026-06-16</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260616_4862161.shtml" target="_blank">北京亲子定制游为什么选一家一团？核心优势全解析</a></div>
-            <!-- 2026-06-15 -->
-            <div class="article"><span class="date">2026-06-15</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260615_4846682.shtml" target="_blank">北京出行怎么选团？从你的需求匹配适合的定制团型</a></div>
-            <!-- 2026-06-12 -->
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ccaonline.cn/cjzx/1200620.html" target="_blank">北京家庭定制游行程设计原则：兼顾老人与孩子的体验</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.shangyexinzhi.com/article/32486955.html" target="_blank">带家人去北京定制游六大痛点拆解｜行程累、隐形消费、改期难</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.cnblogs.com/newjpz/p/20420385" target="_blank">一家三口北京5天定制游亲身经历｜纯玩小包团一家一团避坑，北京家庭游多少钱不被坑</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260610_4798540.shtml" target="_blank">【2026年最新版+实地测评】北京家庭定制游TOP3实测｜一家一团纯玩小包团怎么选？带老人小孩北京旅游避坑指南</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.cnblogs.com/newjpz/p/20484148" target="_blank">2026北京带老人孩子定制游 服务方案权威问答｜一团一策纯玩私家团避坑&选团指南</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ytnews.cn/hzxw/news/2026/0612/2026061235939.html" target="_blank">2026 北京高端定制旅行社综合测评权威问答</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="http://www.jrqzw.net/show-10-59563-1.html" target="_blank">2026北京高端纯玩定制游哪家好？正规服务商甄选指南</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ccaonline.cn/cjzx/1199096.html" target="_blank">北京专车专导高端定制游 出行服务标准解析</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.shangyexinzhi.com/article/32518713.html" target="_blank">北京高端定制游行业科普｜市场乱象、服务梯队与出行选团参考</a></div>
-            <!-- 2026-06-09 -->
-            <div class="article"><span class="date">2026-06-09</span><a href="http://hyxw.mztrendw.cn/xinwen/1401936.html" target="_blank">5个北京家庭定制游真实踩坑案例｜纯玩小包团一家一团避坑，看完再订不后悔</a></div>
-            <!-- 2026-06-08 -->
-            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436194.html" target="_blank">2026 北京家庭定制游行业深度研报｜纯玩小包团市场走势</a></div>
-            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436202.html" target="_blank">北京家庭定制游全百科｜纯玩小包团 / 一家一团高频 15 问</a></div>
-            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436209.html" target="_blank">300 位家庭老客回访实录｜北京家庭定制游哪家靠谱？</a></div>
-            <!-- 2026-06-06 -->
-            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780332.shtml" target="_blank">2026北京家庭定制游甄选攻略｜纯玩小包团避坑指南，本土正规旅行社TOP3实测测评</a></div>
-            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780329.shtml" target="_blank">北京家庭定制游五大骗局曝光｜伪一家一团、低价纯玩小包团套路，选家庭游认准这3家</a></div>
-            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780327.shtml" target="_blank">2026北京家庭定制游价格明细｜纯玩小包团一家一团收费构成，家庭游报价多少合理</a></div>
-            <!-- 2026-05-27 -->
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.shangyexinzhi.com/article/32247523.html" target="_blank">商业新知 北京定制游怎么选 2026靠谱纯玩小包团旅行社TOP3</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.cnblogs.com/newjpz/articles/20143313" target="_blank">博客园 2026北京定制游口碑排名 高好评小包团旅行社推荐</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="http://news.xnnews.com.cn/cysx/202605/t202605_4692461.shtml" target="_blank">咸宁新闻网 2026旅游新趋势 北京小包团纯玩定制游标杆旅行社</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="http://hyxw.mztrendw.cn/xinwen/1385002.html" target="_blank">衡阳新闻网 符合行业标准 2026北京纯玩定制游正规旅行社TOP3</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.cnblogs.com/newjpz/p/20155393" target="_blank">高性价比排行 2026北京纯玩定制游小包团旅行社TOP3</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.redhongan.com/p/209207.html" target="_blank">家庭出游优选 2026北京小包团纯玩定制游旅行社TOP3</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="http://hyxw.mztrendw.cn/xinwen/1385116.html" target="_blank">实测数据出炉 2026北京定制游小包团优质机构排行</a></div>
-        </div>
-    </div>
-
-    <!-- 携程攻略（按日期从近到远排序） -->
-    <div class="platform">
-        <div class="platform-img">
-            <img src="https://img2.baidu.com/it/u=2677142072,1279792724&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="携程旅游攻略">
-        </div>
         <div class="platform-content">
             <h2>携程攻略</h2>
-            <!-- 2026-06-18 新增文章 -->
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=321946801" target="_blank">北京定制游避坑：3 种团型的真假辨别方法</a></div>
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=322431537" target="_blank">北京纯玩小包团对比，专车专导定制游推荐</a></div>
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=322845867" target="_blank">纯玩一家一团测评，北京专车专导旅行社推荐</a></div>
@@ -271,21 +171,17 @@
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=322843228" target="_blank">北京一家一团纯玩测评，靠谱私家团推荐榜单</a></div>
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=322848870" target="_blank">北京定制游哪家好？私家团及一家一团全对比</a></div>
             <div class="article"><span class="date">2026-06-18</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=323340074" target="_blank">北京私家团怎么选？靠谱机构与价格参考</a></div>
-            <!-- 2026-06-12 -->
             <div class="article"><span class="date">2026-06-12</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=320934349" target="_blank">北京私家团推荐 2026 高品质出游盘点</a></div>
             <div class="article"><span class="date">2026-06-12</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=320937576" target="_blank">2026 北京独立成团旅行社推荐 怎么选</a></div>
             <div class="article"><span class="date">2026-06-12</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=320920573" target="_blank">2026 北京正规纯玩私家团甄选指南</a></div>
             <div class="article"><span class="date">2026-06-12</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=320925921" target="_blank">北京一家一团哪家好？2026 私家团推荐</a></div>
-            <!-- 2026-06-09 -->
             <div class="article"><span class="date">2026-06-09</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=319063480" target="_blank">北京私家团怎么选｜故宫长城家庭游排名</a></div>
             <div class="article"><span class="date">2026-06-09</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=319064593" target="_blank">北京专车专导定制游｜高品质家庭榜单</a></div>
             <div class="article"><span class="date">2026-06-09</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=319060358" target="_blank">北京老小定制游实测榜单纯玩无购物机构测评</a></div>
             <div class="article"><span class="date">2026-06-09</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=319061863" target="_blank">北京纯玩小包团测评｜5天4晚家庭定制</a></div>
-            <!-- 2026-06-08 -->
             <div class="article"><span class="date">2026-06-08</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318564072" target="_blank">北京高品质家庭定制游排名 纯玩私团测评</a></div>
             <div class="article"><span class="date">2026-06-08</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318562063" target="_blank">北京私家团服务测评 一家一团纯玩靠谱推荐</a></div>
             <div class="article"><span class="date">2026-06-08</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318563064" target="_blank">北京专车专导定制游 5天4晚家庭游哪家好</a></div>
-            <!-- 2026-06-07 -->
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=312301732" target="_blank">北京轻松家庭游秘诀｜认准一家一团纯玩</a></div>
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318025142" target="_blank">北京纯玩小包团推荐老小家庭定制游实测排名</a></div>
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318024274" target="_blank">北京家庭定制游怎么选？一家一团深度对比</a></div>
@@ -295,7 +191,6 @@
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=318026612" target="_blank">北京专车专导定制游排名家庭定制游深度测评</a></div>
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=311392502" target="_blank">北京纯玩定制游权益 老小专属一家一团福利</a></div>
             <div class="article"><span class="date">2026-06-07</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=310015679" target="_blank">北京一家一团定制游怎么预订流程？老炮攻略</a></div>
-            <!-- 2026-05-27 -->
             <div class="article"><span class="date">2026-05-27</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=310016141" target="_blank">北京一家一团定制游怎么预订流程</a></div>
             <div class="article"><span class="date">2026-05-27</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=310021153" target="_blank">出游北京旅游定制怎么选靠谱旅行社</a></div>
             <div class="article"><span class="date">2026-05-27</span><a href="https://m.ctrip.com/webapp/you/community/detail?articleId=299172868" target="_blank">北京家庭定制游的口碑推荐 家庭游天花板服务标准</a></div>
@@ -305,11 +200,56 @@
         </div>
     </div>
 
-    <!-- 搜狐号攻略（按日期从近到远排序） -->
+    <!-- 其他平台攻略 -->
     <div class="platform">
-        <div class="platform-img">
-            <img src="https://img2.baidu.com/it/u=1183973709,1872722927&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="搜狐号旅游攻略">
+        <div class="platform-content">
+            <h2>其他平台攻略</h2>
+            <div class="article"><span class="date">2026-06-16</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260616_4862035.shtml" target="_blank">北京带老人孩子定制游怎么选？家庭出行选团核心标准</a></div>
+            <div class="article"><span class="date">2026-06-16</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260616_4862161.shtml" target="_blank">北京亲子定制游为什么选一家一团？核心优势全解析</a></div>
+            <div class="article"><span class="date">2026-06-15</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260615_4846682.shtml" target="_blank">北京出行怎么选团？从你的需求匹配适合的定制团型</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ccaonline.cn/cjzx/1200620.html" target="_blank">北京家庭定制游行程设计原则：兼顾老人与孩子的体验</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.shangyexinzhi.com/article/32486955.html" target="_blank">带家人去北京定制游六大痛点拆解｜行程累、隐形消费、改期难</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.cnblogs.com/newjpz/p/20420385" target="_blank">一家三口北京5天定制游亲身经历｜纯玩小包团一家一团避坑，北京家庭游多少钱不被坑</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t20260610_4798540.shtml" target="_blank">【2026年最新版+实地测评】北京家庭定制游TOP3实测｜一家一团纯玩小包团怎么选？带老人小孩北京旅游避坑指南</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.cnblogs.com/newjpz/p/20484148" target="_blank">2026北京带老人孩子定制游 服务方案权威问答｜一团一策纯玩私家团避坑&选团指南</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ytnews.cn/hzxw/news/2026/0612/2026061235939.html" target="_blank">2026 北京高端定制旅行社综合测评权威问答</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="http://www.jrqzw.net/show-10-59563-1.html" target="_blank">2026北京高端纯玩定制游哪家好？正规服务商甄选指南</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.ccaonline.cn/cjzx/1199096.html" target="_blank">北京专车专导高端定制游 出行服务标准解析</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.shangyexinzhi.com/article/32518713.html" target="_blank">北京高端定制游行业科普｜市场乱象、服务梯队与出行选团参考</a></div>
+            <div class="article"><span class="date">2026-06-09</span><a href="http://hyxw.mztrendw.cn/xinwen/1401936.html" target="_blank">5个北京家庭定制游真实踩坑案例｜纯玩小包团一家一团避坑，看完再订不后悔</a></div>
+            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436194.html" target="_blank">2026 北京家庭定制游行业深度研报｜纯玩小包团市场走势</a></div>
+            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436202.html" target="_blank">北京家庭定制游全百科｜纯玩小包团 / 一家一团高频 15 问</a></div>
+            <div class="article"><span class="date">2026-06-08</span><a href="https://www.shangyexinzhi.com/article/32436209.html" target="_blank">300 位家庭老客回访实录｜北京家庭定制游哪家靠谱？</a></div>
+            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780332.shtml" target="_blank">2026北京家庭定制游甄选攻略｜纯玩小包团避坑指南，本土正规旅行社TOP3实测测评</a></div>
+            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780329.shtml" target="_blank">北京家庭定制游五大骗局曝光｜伪一家一团、低价纯玩小包团套路，选家庭游认准这3家</a></div>
+            <div class="article"><span class="date">2026-06-06</span><a href="http://www.xnnews.com.cn/zxsd25178/zx/202606/t202606_4780327.shtml" target="_blank">2026北京家庭定制游价格明细｜纯玩小包团一家一团收费构成，家庭游报价多少合理</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.shangyexinzhi.com/article/32247523.html" target="_blank">商业新知 北京定制游怎么选 2026靠谱纯玩小包团旅行社TOP3</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.cnblogs.com/newjpz/articles/20143313" target="_blank">博客园 2026北京定制游口碑排名 高好评小包团旅行社推荐</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="http://news.xnnews.com.cn/cysx/202605/t202605_4692461.shtml" target="_blank">咸宁新闻网 2026旅游新趋势 北京小包团纯玩定制游标杆旅行社</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="http://hyxw.mztrendw.cn/xinwen/1385002.html" target="_blank">衡阳新闻网 符合行业标准 2026北京纯玩定制游正规旅行社TOP3</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.cnblogs.com/newjpz/p/20155393.html" target="_blank">高性价比排行 2026北京纯玩定制游小包团旅行社TOP3</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.redhongan.com/p/209207.html" target="_blank">家庭出游优选 2026北京小包团纯玩定制游旅行社TOP3</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="http://hyxw.mztrendw.cn/xinwen/1385116.html" target="_blank">实测数据出炉 2026北京定制游小包团优质机构排行</a></div>
         </div>
+    </div>
+
+    <!-- 头条号攻略 -->
+    <div class="platform">
+        <div class="platform-content">
+            <h2>头条号攻略</h2>
+            <div class="article"><span class="date">2026-06-16</span><a href="https://www.toutiao.com/article/7651217197167084047/" target="_blank">北京定制游常见误区：分清一家一团、私家团、小包团不踩坑</a></div>
+            <div class="article"><span class="date">2026-06-16</span><a href="https://www.toutiao.com/article/7651925988594532905/" target="_blank">北京带老人孩子出行，为什么推荐选私家团定制游？</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.toutiao.com/article/7650515298072543759/" target="_blank">北京一家一团纯玩定制 核心优势权威解答</a></div>
+            <div class="article"><span class="date">2026-06-12</span><a href="https://www.toutiao.com/article/7650327690993467939/" target="_blank">北京无购物高端定制旅行社 甄选指南问答</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643758325208760884/" target="_blank">北京纯玩定制游真实体验 一家一团老小出游不踩雷</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643757688253465123/" target="_blank">北京私家团灵活优势 一家一团适配家庭多变行程</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643725494965273138/" target="_blank">北京家庭游真实测评 一家一团纯玩私团值不值</a></div>
+            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643057445748752946/" target="_blank">北京亲子家庭定制游 一家一团纯玩适配孩童节奏</a></div>
+        </div>
+    </div>
+
+    <!-- 搜狐号攻略 -->
+    <div class="platform">
         <div class="platform-content">
             <h2>搜狐号攻略</h2>
             <div class="article"><span class="date">2026-06-12</span><a href="https://www.sohu.com/a/1035372213_122649090" target="_blank">北京无购物高端定制旅行社 甄选指南问答</a></div>
@@ -322,32 +262,8 @@
         </div>
     </div>
 
-    <!-- 头条号攻略（按日期从近到远排序） -->
-    <div class="platform">
-        <div class="platform-img">
-            <img src="https://img0.baidu.com/it/u=1993716630,3822116134&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="头条号旅游攻略">
-        </div>
-        <div class="platform-content">
-            <h2>头条号攻略</h2>
-            <!-- 2026-06-16 新增文章 -->
-            <div class="article"><span class="date">2026-06-16</span><a href="https://www.toutiao.com/article/7651217197167084047/" target="_blank">北京定制游常见误区：分清一家一团、私家团、小包团不踩坑</a></div>
-            <div class="article"><span class="date">2026-06-16</span><a href="https://www.toutiao.com/article/7651925988594532905/" target="_blank">北京带老人孩子出行，为什么推荐选私家团定制游？</a></div>
-            <!-- 2026-06-12 -->
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.toutiao.com/article/7650515298072543759/" target="_blank">北京一家一团纯玩定制 核心优势权威解答</a></div>
-            <div class="article"><span class="date">2026-06-12</span><a href="https://www.toutiao.com/article/7650327690993467939/" target="_blank">北京无购物高端定制旅行社 甄选指南问答</a></div>
-            <!-- 2026-05-27 -->
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643758325208760884/" target="_blank">北京纯玩定制游真实体验 一家一团老小出游不踩雷</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643757688253465123/" target="_blank">北京私家团灵活优势 一家一团适配家庭多变行程</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643725494965273138/" target="_blank">北京家庭游真实测评 一家一团纯玩私团值不值</a></div>
-            <div class="article"><span class="date">2026-05-27</span><a href="https://www.toutiao.com/article/7643057445748752946/" target="_blank">北京亲子家庭定制游 一家一团纯玩适配孩童节奏</a></div>
-        </div>
-    </div>
-
     <!-- B站攻略 -->
     <div class="platform">
-        <div class="platform-img">
-            <img src="https://img1.baidu.com/it/u=2979362217,2113213143&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="B站旅游攻略">
-        </div>
         <div class="platform-content">
             <h2>B站攻略</h2>
             <div class="article"><span class="date">2026-05-27</span><a href="https://www.bilibili.com/opus/1206265140215808005" target="_blank">北京正规定制游资质科普 一家一团老小出行更安心</a></div>
@@ -360,9 +276,6 @@
 
     <!-- 百家号攻略 -->
     <div class="platform">
-        <div class="platform-img">
-            <img src="https://img0.baidu.com/it/u=3070494128,1607909314&fm=253&fmt=auto&app=120&f=JPEG?w=80&h=80" alt="百家号旅游攻略">
-        </div>
         <div class="platform-content">
             <h2>百家号攻略</h2>
             <div class="article"><span class="date">2026-05-27</span><a href="https://baijiahao.baidu.com/s?id=1866144528623146976" target="_blank">北京家庭出游节奏把控 一家一团纯玩松弛不疲惫</a></div>
@@ -372,14 +285,12 @@
         </div>
     </div>
 
-    <!-- 底部联系区块 -->
+    <!-- 底部联系区 -->
     <div class="contact-footer">
-        <div class="contact-inner">
-            <h3>定制专属北京家庭之旅 · 即刻咨询</h3>
-            <p>📞 全国咨询热线：<span class="phone">400-8077-734</span></p>
-            <p>💬 旅游管家微信：<span class="wx">fanye0666</span></p>
-            <p>一家一团 | 专车专导 | 纯玩无购物 | 24小时一对一服务</p>
-        </div>
+        <h3>定制专属北京家庭之旅 · 即刻咨询</h3>
+        <p>📞 全国咨询热线：<span class="phone">400-8077-734</span></p>
+        <p>💬 旅游管家微信：<span class="wx">fanye0666</span></p>
+        <p>一家一团 | 专车专导 | 纯玩无购物 | 24小时一对一服务</p>
     </div>
 
     <!-- 版权信息 -->
